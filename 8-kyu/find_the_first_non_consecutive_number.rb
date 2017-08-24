@@ -10,40 +10,20 @@ The array will always have at least 2 elements and all the elements will be numb
 
 =end
 
-#iterate through array
- 	#find the first number that is not x, x+1, x+2, x+3 otherwise x, (x+1), (x-1)+1
 
- 	#|i| i+1 == x[i+1] ?
+def first_non_consec_number(arr)
 
- 	#i= x[0]
- 	#i+1 = x[1]
- 	#i+2 = x[2]
-
-
-	#print x[i] if x[i-1]!
-
-#has to be a a loop
-
-
-
-def first_non_consec_number(x)
-
-  x.each_with_index do |num, i|
-
-    if x[i+1] != num+1
-      return x[i+1]
+   arr.each_with_index do |num, i|
+    if arr[i+1] != num+1
+      return arr[i+1]
     end
   end
 
 
 end
 
-first_non_consec_number([1,2,3,4,6,7,8])
+p first_non_consec_number([1,2,3,4,6,7,8])
 #first_non_consec_number([])
-first_non_consec_number([1,2,3,4,5,6,7,8])
-#i+1 => 2,3,4,5,7,8,9
+p first_non_consec_number([1,2,3,4,5,6,7,8])
 
-#x[j] => 1,2,3,4,6,7,8
-
-#x[j+1] => 2,3,4,6,7,8
 
