@@ -34,7 +34,7 @@ class Decoder
 
   def process
     @string.slice!("  ")
-    morse_word= @string.split(' ')
+    morse_word= @string.split(" ") #becomes array
 
     while @count< morse_word.length
      @code << MORSE.key(morse_word[@index]) if MORSE.value?(morse_word[@index])
@@ -42,9 +42,10 @@ class Decoder
       @index+=1
     end
 
-    p @code.prepend
+   p @code.prepend
 
-  end
+    end
+
 
 end
 
