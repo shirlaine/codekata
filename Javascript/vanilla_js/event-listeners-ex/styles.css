@@ -1,0 +1,12 @@
+button {
+  display: block;
+  background-color: yellow;
+}
+
+.button-is-clicked {
+  background-color: red;
+}
+
+.button-clicked {
+  background-color: lime;
+}
